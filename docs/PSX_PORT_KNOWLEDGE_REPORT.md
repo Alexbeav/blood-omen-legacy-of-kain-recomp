@@ -28,8 +28,8 @@ new startup or gameplay run, so it remains a candidate.
 
 | Boundary | Evidence | Repeated? | Human confirmed? |
 |---|---|:---:|:---:|
-| Setup archive payload | 2,002 files; zero forbidden files, generated retail source, private paths, or CRLF shell scripts | Yes | No |
-| Exact extracted build | 166 of 166 actions; executable SHA-256 `7BA7AA168CEB038FDDE6127E4B1DA5FE0181D6A70E215D29259E2B96B8F76579` | Yes | No |
+| Setup archive payload | 2,003 files; zero forbidden files, generated retail source, private paths, or CRLF shell scripts | Yes | No |
+| Exact extracted build | 166 of 166 actions; executable SHA-256 `42CD9F86DFA6536CB4F8853710BA333FBA0DF94A65F86FF31FDEE77A5E39396D` | Yes | No |
 | Studio source audit | Zero required failures; two accepted box-art warnings | Yes | No |
 
 ## Shared findings consumed

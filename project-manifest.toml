@@ -30,6 +30,6 @@ commit = "249422969c1c59ac2a1f8aa2299e876a7133998e"
 [pilot]
 graduation_state = "candidate"
 setup_host_audit_failures = 0
-windows_build_sha256 = "7ba7aa168ceb038fdde6127e4b1da5fe0181d6a70e215d29259e2b96b8f76579"
+windows_build_sha256 = "42cd9f86dfa6536cb4f8853710ba333fba0df94a65f86ff31fdee77a5e39396d"
 headless_boot_frames = 0
 disc_set = "single_disc"
