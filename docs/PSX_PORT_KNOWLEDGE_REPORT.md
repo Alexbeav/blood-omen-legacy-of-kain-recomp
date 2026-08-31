@@ -12,8 +12,8 @@
 The exact `0.3.0` Windows ZIP passes the payload audit and a clean extracted
 build. The build used a path with spaces, an invalid inherited
 `SSL_CERT_FILE`, and the frozen RetComM toolchain. The operator's earlier
-private package reached gameplay. This source-only pilot has not completed a
-new startup or gameplay run, so it remains a candidate.
+private package reached gameplay, which supports `bootstrap_verified`. The
+source-only package still needs its exact installed startup and remote audit.
 
 ## Product graduation state
 
@@ -21,8 +21,7 @@ new startup or gameplay run, so it remains a candidate.
 - Evidence: zero required Studio audit failures; exact ZIP clean build
 - Next release gate: exact-package R2 canaries
 - Missing hard gates: exact installed startup, risk canaries, and remote redownload audit
-  redownload audit, title license, and public dependency availability
-- Human-completion coverage: not measured for this source-only pilot
+- Human-completion coverage: gameplay was confirmed in the earlier private package
 
 ## Verified milestones
 
