@@ -1,0 +1,55 @@
+# Autofilled by tools/new_project_layout/probe_disc.py from your legal dump.
+# Review before shipping. Runtime quirks / overlay seeds still need hand work.
+
+[game]
+name = "Blood Omen: Legacy of Kain"
+id = "SLUS-00027"
+players = 1
+exe = "disc/SLUS_000.27"
+disc = ""
+load_address = "0x80010000"
+entry_pc = "0x80077260"
+text_size = "0x00098800"
+# Blood Omen's SYSTEM.CNF owns the corrected stack below. The PS-X EXE
+# header value overlaps the game's live high-memory work area.
+stack_base = "0x801FFF00"
+
+# Digests are for data Track 01 (first BINARY FILE / TRACK 01).
+[prepare_disc]
+out_dir = "disc"
+bin_name = "disc1.bin"
+cue_name = "disc1.cue"
+boot_exe = "SLUS_000.27"
+known_sizes = [705491808]
+known_md5 = [
+  "9515b7c88e003088cdfd818daf9231fc",
+]
+known_sha1 = [
+  "774ff732cecd0937d052ffcdfb225a7d71d163aa",
+]
+known_crc32 = [
+  "f14716bd",
+]
+
+[recompiler]
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+window_title = "Blood Omen: Legacy of Kain Recompiled"
+memcard_dir = "saves"
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+# Online mount gate: digests + track count + optional TOC fingerprint
+# (see docs/NETPLAY.md).
+[netplay]
+require_cue = true
+required_tracks = 1
+required_disc_fp = "b1f4eb86b0d0085096d4a47e6eb52db6d4c6b074f1e70329f9e33ad715cdaa33"

@@ -1,0 +1,35 @@
+[project]
+title = "Blood Omen: Legacy of Kain"
+slug = "blood-omen-legacy-of-kain-recomp"
+region = "USA NTSC-U"
+revision = "SLUS-00027"
+track = "recompilation"
+intended_audience = "research"
+commercial_use_possible = false
+
+[retail_identity]
+disc_count = 1
+serials = ["SLUS-00027"]
+boot_executables = ["SLUS_000.27"]
+executable_sha256 = "1f2a6037b8e1b022698a8e71b1ae796045571b99d119ed23114a25eacabe8c47"
+load_address = "0x80010000"
+entry_point = "0x80077260"
+stack_base = "0x801FFF00"
+
+[framework]
+repository = "https://github.com/Alexbeav/psxrecomp.git"
+commit = "d60f5947e554702a45d84abd789f2f06405c6b97"
+tree = "3590a3ee4021049f28f970ba837b2cc6e3fc7b3d"
+recomp_ui_commit = "4eda65430a431e5685ae0c515ebcd912c7843bff"
+license = "PolyForm Noncommercial 1.0.0"
+
+[studio]
+repository = "https://github.com/TechnicallyComputers/retcomm-studio"
+commit = "249422969c1c59ac2a1f8aa2299e876a7133998e"
+
+[pilot]
+graduation_state = "candidate"
+setup_host_audit_failures = -1
+windows_build_sha256 = ""
+headless_boot_frames = 0
+disc_set = "single_disc"

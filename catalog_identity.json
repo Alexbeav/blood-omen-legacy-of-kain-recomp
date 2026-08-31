@@ -1,0 +1,48 @@
+{
+  "format_version": 1,
+  "game": {
+    "name": "Blood Omen: Legacy of Kain",
+    "id": "SLUS-00027",
+    "boot_exe": "SLUS_000.27"
+  },
+  "marketing": {
+    "description": "A native recompilation setup host for Blood Omen: Legacy of Kain.",
+    "publisher": "Crystal Dynamics",
+    "year": "1996",
+    "region": "USA",
+    "players": 1
+  },
+  "rom_identity": {
+    "cue_name": "disc1.cue",
+    "bin_name": "disc1.bin",
+    "track_counts": [
+      1
+    ],
+    "require_cue": true,
+    "data_track": {
+      "size": 705491808,
+      "md5": "9515b7c88e003088cdfd818daf9231fc",
+      "sha1": "774ff732cecd0937d052ffcdfb225a7d71d163aa",
+      "crc32": "f14716bd"
+    },
+    "disc_fp": "b1f4eb86b0d0085096d4a47e6eb52db6d4c6b074f1e70329f9e33ad715cdaa33"
+  },
+  "exe": {
+    "load_address": "0x80010000",
+    "entry_pc": "0x80077260",
+    "text_size": "0x00098800",
+    "stack_base": "0x801FFF00"
+  },
+  "seeds": {
+    "count": 957,
+    "source": "boot_exe_jal"
+  },
+  "warnings": [
+    "cue has only 1 TRACK \u2014 Track-01-only dumps fail multi-track netplay/catalog gates; prefer a full Redump cue."
+  ],
+  "notes": [
+    "entry_pc/load_address/text_size/stack_base taken from PS-X EXE header.",
+    "seeds are first-pass boot-EXE JAL targets (+ entry); expect to grow as overlays / runtime paths are discovered.",
+    "required_disc_fp is psxrecomp-toc-v1 (matches runtime DiscIdentity)."
+  ]
+}
