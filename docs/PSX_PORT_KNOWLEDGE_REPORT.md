@@ -40,6 +40,7 @@ new startup or gameplay run, so it remains a candidate.
 | `PSX-PUB-004` | independently verified | Rejected draft contained copied memory-card files; sealed ZIP contains none. |
 | `PSX-PUB-006` | independently verified | Packaging passes with no tracked optional launcher assets. |
 | `PSX-WIN-005` | independently verified | C, C++, and RC resolve to RetComM toolchain `1.0.14`; the spaced-path build passes. |
+| `PSX-WIN-006` | independently verified | Ambient WSL Bash lacked `zip`; explicit Git-for-Windows Bash produced the final archive. |
 
 ## Corpus consulted for the current blocker
 
@@ -84,6 +85,7 @@ its installed executable past the bootstrap gate.
 ## Knowledge-base actions
 
 - Updated `PSX-PUB-004`, `PSX-PUB-006`, and `PSX-WIN-005` evidence.
+- Added the Windows packaging-shell identity candidate as `PSX-WIN-006`.
 - Added the stale build-stamp audit lesson as `PSX-PUB-011`.
 - Next independent consumer: Koudelka.
 - Upstream candidate: setup packager payload and Windows RC guards.
