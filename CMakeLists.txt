@@ -29,6 +29,7 @@ psxrecomp_add_game_runtime(psx-runtime
     # NETPLAY_LOBBY_URL "ws://netplay.retcomm.net:8765"
     ENABLE_SETUP_WIZARD
     WINDOW_TITLE "Blood Omen: Legacy of Kain Recompiled"
+    EXE_NAME "Blood_Omen__Legacy_of_Kain_Recompiled"
     DEFAULT_GAME_CONFIG_PATH "game.toml"
     MAX_PLAYERS 1
     APP_ICON "${CMAKE_CURRENT_SOURCE_DIR}/assets/psxrecomp.ico"

@@ -14,3 +14,10 @@ SYSTEM.CNF ownership finding.
 
 The public package must not contain the disc, a BIOS, generated retail code,
 a save, a prebuilt title executable, or a private absolute path.
+
+## v0.3.3 executable-name correction
+
+Public `v0.3.0` can complete a build and then request the wrong executable.
+The corrected source uses `Blood_Omen__Legacy_of_Kain_Recompiled` for CMake, the setup relaunch, and packaging.
+The 24-title source parity gate passes. An exact-ZIP automatic-relaunch canary
+must pass before release authorization.

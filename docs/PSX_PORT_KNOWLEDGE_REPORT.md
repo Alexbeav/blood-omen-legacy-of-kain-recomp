@@ -84,3 +84,9 @@ its installed executable past the bootstrap gate.
 - Added the stale build-stamp audit lesson as `PSX-PUB-011`.
 - Next independent consumer: Koudelka.
 - Upstream candidate: setup packager payload and Windows RC guards.
+
+## v0.3.3 setup correction
+
+The source now uses `Blood_Omen__Legacy_of_Kain_Recompiled` as the only setup executable name. The batch source
+gate passes. The exact-ZIP automatic-relaunch canary and remote release audit
+remain open. Public `v0.3.0` remains unchanged.
