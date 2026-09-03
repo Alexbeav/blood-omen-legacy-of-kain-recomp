@@ -90,3 +90,10 @@ its installed executable past the bootstrap gate.
 The source now uses `Blood_Omen__Legacy_of_Kain_Recompiled` as the only setup executable name. The batch source
 gate passes. The exact-ZIP automatic-relaunch canary and remote release audit
 remain open. Public `v0.3.0` remains unchanged.
+
+## v0.3.5 three-platform refresh
+
+The source now binds the package-only privacy correction and targets Windows
+x64, Linux x64, macOS ARM64, and macOS x64. The replacement build-only CI,
+complete archive audit, and native package gates remain required. This source
+change does not publish a release or claim platform support.
